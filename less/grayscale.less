@@ -76,13 +76,13 @@ a {
     font-family: "ChaparralPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: black;
     .navbar-brand {
-        font-weight: 700;
+        font-weight: 400;
         &:focus {
             outline: none;
         }
         .navbar-toggle {
             padding: 4px 6px;
-            font-size: 16px;
+            font-size: 12px;
             color: white;
             &:focus,
             &:active {
@@ -121,6 +121,24 @@ a {
             }
         }
     }
+    @media(max-width:768px) {
+        .navbar-brand {
+        font-weight: 400;
+        font-size: 1.25rem;
+        &:focus {
+            outline: none;
+        }
+        .navbar-toggle {
+            padding: 4px 6px;
+            font-size: 12px;
+            color: white;
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}
     @media(min-width:768px) {
         padding: 20px 0;
         border-bottom: none;
@@ -153,7 +171,7 @@ a {
     .intro-body {
         display: table-cell;
         /*vertical-align: middle;*/
-        padding-top: 18rem;
+        padding-top: 10rem;
         .brand-heading {
             font-size: 40px;
         }
@@ -173,6 +191,20 @@ a {
             }
         }
     }
+    @media(max-width:768px) {
+        height: 100%;
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 50px;
+                padding-top: 0rem;
+                margin: 0 0 0;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }    
 }
 
 .btn-circle {
